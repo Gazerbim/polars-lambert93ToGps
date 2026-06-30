@@ -1,0 +1,17 @@
+[project]
+name = "polars-lambert93ToGps"
+version = "0.1.0"
+description = "Pure Polars Lambert93 (EPSG:2154) to WGS84 coordinate conversion"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Gazerbim"}]
+dependencies = ["polars>=0.20.0"]
+keywords = ["polars", "lambert93", "wgs84", "geodesy", "ign", "epsg2154"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pyproj"]  # pyproj seulement pour valider les tests vs la référence
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
