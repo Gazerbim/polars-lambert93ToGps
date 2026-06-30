@@ -39,9 +39,9 @@ def lambert93_to_wgs84(
     Returns:
         A tuple (longitude_expr, latitude_expr):
             - longitude_expr: Polars expression for longitude,
-              in decimal degrees, aliased "coordonneeLon".
+              in decimal degrees, aliased "longitude".
             - latitude_expr: Polars expression for latitude,
-              in decimal degrees, aliased "coordonneeLat".
+              in decimal degrees, aliased "latitude".
         These expressions must be passed to df.with_columns([...])
         to be evaluated across the whole DataFrame.
 
