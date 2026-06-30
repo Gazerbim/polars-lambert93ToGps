@@ -13,20 +13,20 @@ datasets, especially in lazy pipelines.
 
 ## Installation
 
-\`\`\`bash
-pip install polars-lambert93
-\`\`\`
+```bash
+pip install polars-lambert93ToGps
+```
 
 ## Usage
 
-\`\`\`python
+```python
 import polars as pl
 from polars_lambert93 import lambert93_to_wgs84
 
 df = pl.DataFrame({"x": [700000.0], "y": [6600000.0]})
 lon_expr, lat_expr = lambert93_to_wgs84("x", "y")
 df = df.with_columns([lon_expr, lat_expr])
-\`\`\`
+```
 
 ## Accuracy
 
@@ -36,4 +36,4 @@ cadastral use), prefer `pyproj` with official NTF/RGF93 grids.
 
 ## Benchmarks
 
-[Insérez vos chiffres sur 43M lignes ici, ça donnera de la crédibilité]
+
