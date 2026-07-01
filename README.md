@@ -34,6 +34,3 @@ Validated against `pyproj` to sub-micrometer precision (7 Newton
 iterations). For certified geodetic precision (official exports,
 cadastral use), prefer `pyproj` with official NTF/RGF93 grids.
 
-## Benchmarks
-
-
